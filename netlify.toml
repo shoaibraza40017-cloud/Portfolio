@@ -1,12 +1,12 @@
 [build]
-  command = "cd app && npm install && npm run build"
-  publish = "raza/build"  # or appropriate output
+  command = "cd raza && npm install && npm run build"
+  publish = "raza/build"
 
-[functions]
-  directory = "functions"
+[function]
+  directory = "function"
 
 [[redirects]]
   from = "/send-email"
-  to = "/.netlify/functions/send-email"
+  to = "/.netlify/function/send-email"
   status = 200
   methods = ["POST"]
