@@ -1,6 +1,6 @@
 [build]
-  command = "npm install && npm run build"
-  publish = "build"  # For CRA use 'build', for Next.js see note below
+  command = "cd app && npm install && npm run build"
+  publish = "app/build"  # or appropriate output
 
 [functions]
   directory = "functions"
