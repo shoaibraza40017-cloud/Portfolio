@@ -1,6 +1,7 @@
 [build]
-  command = "cd raza && npm install && npm run build"
+  command = "cd raza && npm install --legacy-peer-deps && npm run build"
   publish = "raza/build"
+
 
 [function]
   directory = "function"
