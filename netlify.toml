@@ -1,7 +1,6 @@
 [build]
-command = "npm install && npm run build"
-publish = "build"
-
+  command = "npm install && npm run build"
+  publish = "build"  # For CRA use 'build', for Next.js see note below
 
 [functions]
   directory = "functions"
@@ -10,4 +9,4 @@ publish = "build"
   from = "/send-email"
   to = "/.netlify/functions/send-email"
   status = 200
-
+  methods = ["POST"]
