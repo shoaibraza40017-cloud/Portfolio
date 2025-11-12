@@ -1,11 +1,11 @@
 [build]
-  base = "raza"
   command = "npm install --legacy-peer-deps && npm run build"
-  publish = "build"
+  publish = ".next"
+  function = "function"
 
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
-[function]
-  directory = "function"
 
 [[redirects]]
   from = "/send-email"
