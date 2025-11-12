@@ -1,15 +1,6 @@
 [build]
-  command = "cd frontend && npm install && npm run build"
-  publish = "frontend/.next"
-
-  [build]
-  command = "npm install && npm run build"
-  publish = "build"
-
-
-[build]
-  command = "npm install && npm run build && npm run export"
-  publish = "out"
+command = "npm install && npm run build"
+publish = "build"
 
 
 [functions]
